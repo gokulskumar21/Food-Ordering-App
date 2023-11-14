@@ -16,7 +16,7 @@
 
 		<!-- App Identifier -->
 		<ApplicationId>com.companyname.foodonline</ApplicationId>
-		<ApplicationIdGuid>414aa495-5474-45ae-96e6-a2bceda47f6c</ApplicationIdGuid>
+		<ApplicationIdGuid>cb41a0e0-a412-4128-9e2b-8f4841853856</ApplicationIdGuid>
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
@@ -75,12 +75,19 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Include="FoodOnline.csproj" />
-	  <None Include="FoodOnline.sln" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+	  <MauiXaml Update="Login\Login.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Login\SignUp.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Login\Welcome.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>
